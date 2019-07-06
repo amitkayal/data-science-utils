@@ -321,5 +321,24 @@ def show_misclassified(X, Y_ohe, Y_pred, classes,
     plt.show()
 
 
-def show_kernel_activation():
+    def plot_figures(figures, nrows = 1, ncols=1):
+    """Plot a dictionary of figures.
+
+    Parameters
+    ----------
+    figures : <title, figure> dictionary
+    ncols : number of columns of subplots wanted in the display
+    nrows : number of rows of subplots wanted in the figure
+    """
+
+    fig, axeslist = plt.subplots(ncols=ncols, nrows=nrows,squeeze =False,figsize=(15, 15))
+    for ind,title in enumerate(figures):
+        #         axeslist.ravel()[ind].imshow(figures[title])
+        axeslist.ravel()[ind].imshow(imresize(toimage(figures[title]), (32, 32)))
+#         plt.imshow(imresize(toimage(test_features[125]), (224, 224)))
+        axeslist.ravel()[ind].set_title(title)
+        axeslist.ravel()[ind].set_axis_off()
+    plt.tight_layout() # optional
+    
+    def show_kernel_activation():
     pass
