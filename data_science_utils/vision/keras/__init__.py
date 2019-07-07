@@ -321,7 +321,7 @@ def show_misclassified(X, Y_ohe, Y_pred, classes,
     plt.show()
 
 
-    def plot_figures(figures, nrows = 1, ncols=1):
+def plot_figures(figures, nrows = 1, ncols=1):
  #   """Plot a dictionary of figures.
 #
  #   Parameters
