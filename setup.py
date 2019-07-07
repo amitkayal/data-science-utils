@@ -3,9 +3,9 @@ from setuptools import find_packages, setup
 setup(name='data_science_utils',
       version='0.2.34',
       description='Utils for use in python with pandas and numpy',
-      url='https://github.com/faizanahemad/data-science-utils',
-      author='Faizan Ahemad',
-      author_email='fahemad3@gmail.com',
+      url='https://github.com/amitkayal/data-science-utils',
+      author='Amit Kayal',
+      author_email='amit.kayal@gmail.com',
       license='MIT',
       install_requires=[
           'numpy','pandas','beautifulsoup4','fastnumbers','more-itertools',
